@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mecánica Clásica y Termodinámica | Universidad de Guayaquil</title>
+    <style>
+        :root {
+            --ug-blue: #002D62;
+            --ug-gold: #FFC72C;
+            --ug-light: #F4F7F9;
+            --ug-dark: #333333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--ug-light);
+            color: var(--ug-dark);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: var(--ug-blue);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 5px solid var(--ug-gold);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+        header p {
+            color: var(--ug-gold);
+            font-weight: bold;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-left: 5px solid var(--ug-blue);
+        }
+        h2 {
+            color: var(--ug-blue);
+        }
+        .btn {
+            background-color: var(--ug-blue);
+            color: white;
+            border: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background-color: #001f40;
+        }
+        .interactive-section {
+            background: #fff8e1;
+            border-left: 5px solid var(--ug-gold);
+            padding: 1rem;
+            margin-top: 1rem;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Universidad de Guayaquil</h1>
+        <p>Facultad de Ciencias - Mecánica Clásica y Termodinámica</p>
+    </header>
+
+    <div class="container">
+        <!-- Nivel 1 -->
+        <section class="card">
+            <h2>Nivel 1: Leyes de Newton y Energía Potencial</h2>
+            <p><strong>Caso de Estudio:</strong> Un sistema de transporte masivo en Guayaquil experimenta desaceleraciones repentinas. Analiza cómo actúan las fuerzas de fricción y la conservación de la energía en los vagones.</p>
+            <div class="interactive-section">
+                <p>¿Qué ocurre con la energía potencial de un pasajero si la altura del vagón cambia en un plano inclinado?</p>
+                <button class="btn" onclick="alert('¡Correcto! Se transforma en energía cinética o se disipa en forma de trabajo y calor.')">Ver Respuesta</button>
+            </div>
+        </section>
+
+        <!-- Nivel 2 -->
+        <section class="card">
+            <h2>Nivel 2: Conservación del Momento</h2>
+            <p><strong>Caso de Estudio:</strong> Simulación de impacto vehicular en el tráfico de la Av. 9 de Octubre para determinar las velocidades previas a la colisión mediante el principio de conservación del momento lineal.</p>
+            <div class="interactive-section">
+                <p>En un choque perfectamente inelástico, ¿se conserva la energía cinética total del sistema?</p>
+                <button class="btn" onclick="alert('¡Incorrecto/Falso! La energía cinética no se conserva ya que parte de ella se disipa en deformación y calor, aunque el momento lineal sí se conserva.')">Ver Respuesta</button>
+            </div>
+        </section>
+
+        <!-- Nivel 3 -->
+        <section class="card">
+            <h2>Nivel 3: Termodinámica y Procesos Adiabáticos</h2>
+            <p><strong>Caso de Estudio:</strong> Optimización de los sistemas de refrigeración industrial en el puerto marítimo aplicando la primera y segunda ley de la termodinámica, evaluando compresiones y expansiones adiabáticas.</p>
+            <div class="interactive-section">
+                <p>¿Qué caracteriza principalmente a un proceso adiabático?</p>
+                <button class="btn" onclick="alert('¡Exacto! Ocurre sin transferencia de calor entre el sistema y su entorno (Q = 0).')">Ver Respuesta</button>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
